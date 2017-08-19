@@ -26,6 +26,11 @@ like so to have them bundled at build time:
 var source = require('glslify!raw!./my-shader.glsl')
 ```
 
+For Webpack 2 do:
+``` javascript
+var source = require('raw-loader!glslify-loader!./my-shader.glsl')
+```
+
 ### Configuration
 
 Alternatively, you may apply these loaders automatically
